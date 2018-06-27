@@ -5,7 +5,7 @@ import sys
 import glob
 
 
-def main(path, layer=0, is_root=False):
+def main(path: str, layer: int = 0, is_root: bool = False):
     tab = u" "
     if is_root is True:
         file_path = glob.glob(path)
