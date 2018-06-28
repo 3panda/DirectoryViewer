@@ -6,6 +6,11 @@ import glob
 
 
 def main(path: str, layer: int = 0, is_root: bool = False):
+    """
+    :param path: ツリー状で表示させる対象のPath
+    :param layer: 取得するディレクトリの階層
+    :param is_root: root(最上層)であるか
+    """
     tab = u" "
     if is_root is True:
         file_path = glob.glob(path)
